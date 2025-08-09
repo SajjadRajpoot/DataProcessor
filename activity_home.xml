@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+
+        android:background="@drawable/custom_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/spyTech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/app_name"
+        android:padding="8dp"
+
+        android:src="@drawable/spytech"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.025"
+        android:text="SpyTech"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toEndOf="@+id/spyTech"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnLogOut"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logout"
+        app:layout_constraintCircleRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnPhoneNumber"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spyTech"
+        app:srcCompat="@drawable/phone_number" />
+
+    <ImageButton
+        android:id="@+id/btnCNIC"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/cnic_number" />
+
+    <ImageButton
+        android:id="@+id/btnCDR_Report"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPhoneNumber"
+        app:srcCompat="@drawable/cdr_report" />
+
+    <ImageButton
+        android:id="@+id/btnCommonReport"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toEndOf="@+id/btnCDR_Report"
+        app:layout_constraintTop_toBottomOf="@+id/btnCNIC"
+        app:srcCompat="@drawable/common_numbers" />
+
+    <ImageButton
+        android:id="@+id/btnBTS_Analysis"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCDR_Report"
+        app:srcCompat="@drawable/bts_analysis" />
+
+    <ImageButton
+        android:id="@+id/btnBTS_Merger"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toEndOf="@+id/btnBTS_Analysis"
+        app:layout_constraintTop_toBottomOf="@+id/btnCommonReport"
+        app:srcCompat="@drawable/bts_merger" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
